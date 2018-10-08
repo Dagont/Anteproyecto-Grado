@@ -1,121 +1,84 @@
 \input{Anexos/LATEX/source/structure}
-\addbibresource{Anexos/LATEX/source/bib/referencias.bib}
 
-% \usepackage{showframe}
-\usepackage{lipsum}
-\usepackage[utf8]{inputenc}
-\usepackage[spanish]{babel}
-\usepackage{newunicodechar}
-\newunicodechar{ﬁ}{fi}
-\newunicodechar{ﬀ}{ff}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%  PORTADA Y CONTRAPORTADA %%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% -- Título de la tesis -- %
 \title{DESARROLLO DE UN PROTOTIPO DE SOFTWARE COMO SOPORTE A LA REVISIÓN DE PUESTOS LABORALES PARA ANTEBRAZO, MUÑECAS Y MANOS}
+
+% -- Autores -- %
 \author{AUTORES:\\\vspace{1cm}\\DANIEL NIETO GÓMEZ\\EMILSON JUNIOR PARRA GAMARRA}
 
+% -- Subtitulo -- %
 \legend{ANTEPROYECTO DE GRADO PARA OPTAR POR EL TÍTULO DE INGENIERO DE SISTEMAS}
+
+% -- Director -- %
 \director{nombre del director}
-\directortitle{t\'itulo del director Msc, PhD ...\\Codirector\\nombre de codirector\\título del codirector Msc, PhD ...}
+
+% -- Título del Director y datos del Codirector -- %
+\directortitle{titulo del director Msc, PhD ...\\Codirector\\nombre de codirector\\título del codirector Msc, PhD ...}
+
+% -- Universidad -- %
 \institution {UNIVERSIDAD DISTRITAL FRANCISCO JOSÉ DE CALDAS}
+
+% -- Facultad -- %
 \faculty {FACULTAD DE INGENIERÍA\\{PROYECTO CURRICULAR INGENIERÍA DE SISTEMAS\\}}
+
+% -- Fecha y Año -- %
 \date{Bogotá D.C, 2018}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%% TABLA DE CONTENIDO, FIGURAS Y TABLAS %%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
 
-	\onehalfspace
-	\maketitle
-	\tableofcontents
-	\newpage \listoffigures
-	\newpage \listoftables
 
-	\setlength{\parskip}{\baselineskip} 
-	\newpage
+%% ---- PREÁMBULO DEL DOCUMENTO ---- %%
+
+% -- Insertar portada y contraportada -- %
+\onehalfspace \maketitle
+
+% -- Insertar tabla de contenidos -- %
+\tableofcontents
+
+% -- Insertar tabla de figuras -- %
+\newpage \listoffigures
+
+% -- Insertar lista de tablas -- %
+\newpage \listoftables
+
+% -- Configurar salto de linea -- %
+\setlength{\parskip}{\baselineskip} 
+\newpage
+
+
+
+%% ---- COMIENZO DEL DOCUMENTO ---- %%
 	
-	
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  CAPITULO UNO %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{INTRODUCCIÓN} 
-La Dirección General de Riesgos Profesionales del Ministerio de la Protección Social publicó en el año 2004 el informe de enfermedad profesional en Colombia 2001 – 2002, en el cual se define un plan de trabajo cuyo objetivo fundamental es incrementar el diagnóstico y prevenir las enfermedades profesionales de mayor prevalencia en Colombia. Dicho plan de trabajo fue incluido en el Plan Nacional de Salud Ocupacional y Seguridad en el trabajo 2013 – 2021, refrendando de esta manera el compromiso del Ministerio frente al tema de la prevención de las enfermedades profesionales.
+% -- Capitulo uno: Introducción -- %
+\input{Anexos/LATEX/chapters/1_Introduccion.tex}
 
-Por esta razón fue creada la Guía de Atención Integral de Salud Ocupacional (GATISO) Basada en la Evidencia para Desórdenes Músculo Esqueléticos (DME) relacionados con movimientos repetitivos de miembros superiores (Síndrome de Túnel Carpiano, Epicondilitis y Enfermedad de De Quervain). Elaborada desde un enfoque integral, emitiendo recomendaciones para prevenir, realizar el diagnóstico precoz y el tratamiento de los trabajadores en riesgo de sufrir o ser afectados por estas enfermedades.
+% -- Capitulo dos: Problema De Investigación -- %
+\input{Anexos/LATEX/chapters/2_ProblemaDeInvestigacion.tex}
 
-Por otra parte, si bien los desórdenes músculo esqueléticos relacionados con el trabajo (DME) son entidades comunes y potencialmente discapacitantes, son prevenibles, por tal motivo, se desea contar con un implemento de oficina que permita monitorear y detectar movimientos ergonómicamente incorrectos realizados con los miembros superiores con el fin de incrementar el diagnóstico y prevenir las enfermedades profesionales de oficina de mayor prevalencia en Colombia y así fortalecer las herramientas disponibles para contrarrestar la problemática.
+% -- Capitulo tres: Objetivos -- %
+\input{Anexos/LATEX/chapters/3_Objetivos.tex}
 
-Partiendo de esta necesidad, se plantea el proyecto presente en busca de crear nuevas soluciones para la salud ocupacional, teniendo como objetivo diseñar y construir una solución que integre dispositivos de hardware existentes con software que permita dar soporte a los procesos de monitoreo del puesto de trabajo, para la evaluación o estudio del puesto de trabajo, lo anterior siendo fundamentado sobre tecnologías de desarrollo libre de acuerdo a las políticas distritales.
+% -- Capitulo cuatro: Justificación -- %
+\input{Anexos/LATEX/chapters/4_Justificacion.tex}
 
-\chapter{PROBLEMA DE INVESTIGACIÓN}
-\section{DESCRIPCIÓN DEL PROBLEMA}
-Las instituciones de salud ocupacional son las encargadas de realizar los procesos de evaluación de puestos laborales, estos procesos permiten a las empresas contar con información de calidad para evitar trastornos ergonómicos que puedan perjudicar la salud de los trabajadores, sin embargo, estos procesos se encuentran en constante optimización para incrementar los niveles de fiabilidad. Por tal motivo se busca fortalecer los procesos de salud ocupacional, garantizando que el entorno de trabajo se encuentre en armonía con las actividades que realiza el trabajador, lo anterior se refleja en la productividad, la calidad, la seguridad, la salud, la fiabilidad, la satisfacción con el trabajo y en el desarrollo personal de los trabajadores.\footcite[3]{MiguelAGonzalezPerez}
+% -- Capitulo cinco: Marco Teórico -- %
+\input{Anexos/LATEX/chapters/5_MarcoTeorico.tex}
 
-Actualmente se realizan revisiones de puestos de trabajo para examinar las condiciones de los puestos de trabajo desde una perspectiva ergonómica con el propósito de obtener una detección temprana de condiciones o actos subestándar y culmine en los controles necesarios para disminuir la probabilidad de presentar alteraciones osteomusculares, desórdenes músculo esqueléticos o enfermedades laborales relacionadas. Sin embargo, estas revisiones solo se ejecutan en un intervalo de tiempo determinado durante el cual la persona que está siendo evaluada actúa diferente e impide un diagnóstico efectivo de vicios posturales.
+% -- Capitulo seis: Alcances y Limitaciones -- %
+\input{Anexos/LATEX/chapters/6_AlcancesyLimitaciones.tex}
 
-Lo descrito anteriormente, repercute en demoras para realizar los cambios en cuanto al mejoramiento en las condiciones y adaptación de los puestos de trabajo. Por tal motivo, se busca implementar una estrategia que permita tener un método de observación objetivo que perciba, identifique y puntualice los vicios posturales. Esto evitaría la falta de exactitud y neutralidad al realizar una inspección de puesto laboral.
+% -- Capitulo siete: Metodología -- %
+\input{Anexos/LATEX/chapters/7_Metodologia.tex}
 
-La empresa Latino BI Consulting presenta antecedentes de los síntomas descritos previamente, con lo cual, se convierte en una unidad de análisis sobre la cual implementar los métodos propuestos y analizar el proceso, el desarrollo y los resultados obtenidos que merecen atención en el futuro.
-
-Por lo tanto se decide poner en marcha el proyecto ‘NOMBRE DEL PROYECTO’ en su primera versión, en donde se propone diseñar, desarrollar y probar un prototipo de software como soporte a la gestión de la revisión de puestos de trabajo para los miembros superiores al utilizar un mouse y teclado.
-
-\section{FORMULACIÓN DEL PROBLEMA}
-De acuerdo a la problemática descrita anteriormente, se plantea la siguiente pregunta que guiará el desarrollo de la propuesta de trabajo ¿Cómo desarrollar un prototipo de software que facilite el proceso de revisión de puestos de trabajo en una organización?
-
-\chapter{OBJETIVOS}
-\section{OBJETIVO GENERAL}
-\paragraph{Propuesta 1}
-Desarrollar un prototipo de software que permita apoyar el proceso de revisión de puestos de trabajo a partir de una evaluación ergonómica constante sobre la postura de los miembros superiores durante las actividades laborales.
-\paragraph{Propuesta 2}
-Crear a partir de una herramienta de hardware un prototipo de software, que permita a través de una interfaz de lenguaje natural, capturar los movimientos de las extremidades superiores en puestos de trabajo, que permita tener una evaluación dinámica y  constante de la pulcritud postural durante toda la ejecución de la actividad laboral. 
-\section{OBJETIVOS ESPECÍFICOS}
-\begin{itemize}
-    \item Determinar las condiciones ergonómicas adecuadas para las muñecas y antebrazos a partir de una revisión sistemática de los estándares utilizados por especialistas de salud ocupacional en el contexto nacional e internacional para determinar vicios posturales,  de esta manera precisando el modelo que más se adecúa al prototipo propuesto.
-    \item Diseñar un modelo computacional para la interpretación de los datos generados por la herramienta de hardware LeapMotion.
-    \item Adoptar una metodología que permita desarrollar de forma ágil un prototipo de software que evalúe la postura del antebrazo y mano en tiempo real. 
-    \item Establecer un modelo de evaluación para los datos capturados por la herramienta que determine las posturas ergonómicamente incorrectas. 
-\end{itemize}
-
-
-\chapter{JUSTIFICACIÓN}
-En los últimos 10 años se ha evidenciado un importante crecimiento en el uso de computadores como elemento de trabajo principal en las oficinas, asimismo, el DANE (Departamento Administrativo Nacional de Estadística)  muestra que 99.4\% de las empresas en los sectores de industria manufacturera, comercio y servicios poseen al menos un computador y de este total general el 75.83 \% usan el computador de forma diaria durante aproximadamente 6 horas de las 8 horas laborales establecidas.\footcite[]{Dane2013IndicadoresEmpresas}
-
-A pesar de que las empresas Administradoras de Riesgos Laborales (ARL) realizan revisiones de puestos de trabajo, el Informe Colombiano de Enfermedades Profesionales para el 2017 indica que la tasa de enfermedades laborales para el país fue de 94,7 por cada 100.000 trabajadores, (FASECOLDA). Teniendose de esta manera, uno de los aspectos más importantes que justifican el proyecto 'NOMBREDELPROYECTO', el cual gira entorno a la reducción de Desórdenes Músculo Esqueléticos (DME) a causa de exigencias biomecánicas no supervisadas en los puestos de trabajo.
-
-% Añadir justificación desde:
-% 1. Perspectiva Monetaria: Las empresas pierden plata
-% 2. Enfoque humano: Las personas quedan lesionadas PERMANENTEMENTE teniendo menor calidad de vida
-% 3. Gastos en Salud: El estado gasta X plata cubriendo DME
-
-por esa razón se pretende estudiar los factores de riesgo laboral que influyen en el desarrollo de este tipo de lesiones del tren superior y extremidades, y la influencia de los factores del trabajo como determinados movimientos repetitivos y posturas
-
-\chapter{MARCO TEÓRICO}
-\section{MARCO CONCEPTUAL}
-\subsection{LeapMotion}
-\subsection{Goniometria}
-\subsection{Análisis de puesto de trabajo}
-\subsection{Enfermedades y lesiones}
-\subsection{Legislación Vigente}
-\section{MARCO REFERENCIAL}
-\subsection{Modelos de ergonomía para brazos y muñecas en el contexto nacional}
-\subsubsection{Normas GATISO}
-\section{Modelos de ergonomía para brazos y muñecas en el contexto internacional}
-\section{MARCO TECNOLÓGICO}
-\chapter{ALCANCES Y LIMITACIONES}
-\section{ALCANCES}
-La presente investigación, está direccionada a un prototipo de software enfocado a  la evaluación dinámica, interactiva y  en tiempo real del trabajador y su puesto de trabajo, cuya orientación está definida para las extremidades superiores y en particular personas que se desempeñan en labores recurrentes. 
-\section{LIMITACIONES}
-En este proyecto no se estudiaran ni evaluaran procesos de rehabilitación o terapias que tengan como objetivo solucionar y/o corregir los síntomas o efectos que se hayan causado por la mala higiene postural en el tren superior. sin querer reemplazar la valoración por parte de un profesional de Seguridad y Salud en el trabajo (SST).
-\chapter{METODOLOGÍA}
+% -- Capítulos sin definir -- %
 \chapter{RECURSOS}
 \chapter{PRESUPUESTO}
 \chapter{CRONOGRAMA}
 
-
+% -- Bibliografía -- %
 \newpage
-\printbibliography[heading=bibintoc, title={BIBLIOGRAFÍA}]
+\printbibliography[heading=bibintoc,title={BIBLIOGRAFÍA}]
     
 \end{document}
