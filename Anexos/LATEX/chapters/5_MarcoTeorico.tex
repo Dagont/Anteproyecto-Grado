@@ -1,19 +1,57 @@
 \chapter{MARCO TEÓRICO}
+
 \section{MARCO CONCEPTUAL}
-\subsection{LeapMotion}
+\subsection{Goniometría y Análisis vectorial de la mano, antebrazo y muñeca}
+La goniometría es la ciencia y técnica que estudia la medición de ángulos, para efectos de este estudio, se medirá la movilidad de las articulaciones mediante un vector que se intercepta en el espacio con otro vector, posteriormente dependiendo del ángulo de esta intersección longitudinal se pude marcar un eje de referencia para así obtener un criterio con respecto a las limitaciones físicas del cuerpo humano \parencite{Taboadela2007TaboadelaLaborales.}
 
-En los últimos años, se han desarrollado diferentes sensores de tipo óptico, que permiten la interacción con objetos 3D. Paralelamente a la aparición de nuevos sensores, que comunican el entorno real con el virtual también el número de aplicaciones relacionadas aumenta. Las aplicaciones se benefician especialmente de la precisión y robustez de los sensores 3D (Khoshelham K., Elberink S.O. Accuracy and resolution of kinect depth data for indoor mapping applications. Sensors) y debido al aumento de la producción de estos sensores se ha efectuado una baja en los precios. Las aplicaciones para sensores 3D incluyen tareas industriales, seguimiento de personas y objetos, análisis de movimiento, animación de personajes, reconstrucción de escenas 3D e interfaces de usuario basadas en gestos [Gesture Recognition using Microsoft Kinect. Proceedings of the IEEE International Conference on Automation]. Estas aplicaciones tienen diferentes requisitos en términos de resolución, velocidad, distancia y características de captura y particularmente con respecto a las interfaces de usuario basadas en gestos, la precisión del sensor es la tarea más desafiante. Los sensores de calidad para el consumidor ofrecen una precisión de posicionamiento limitada. Un análisis del controlador Kinect muestra una desviación estándar en la precisión de profundidad de aproximadamente 1,5 cm [Accuracy and resolution of kinect depth data for indoor mapping applications]. 
+\subsubsection{Goniometría del codo}
+El limite de captura del Leap Motion es hasta la muñeca, a partir de una proyección del ángulo de la muñeca se puede determinar la posición del codo debido a la estructura osea y la membrana interosea, este movimiento se denomina pronación y supinación que se da en la muñeca y se producen hasta el codo.\parencite{Taboadela2007TaboadelaLaborales.} 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{Anexos/LATEX/chapters/images/pronacion&amp;supinacion.png}
+    \caption{pronación y supinación de antebrazo derecho a partir de la posición 0}
+    \small{\textbf{Fuente:} \parencite{Taboadela2007TaboadelaLaborales.} }
+    \label{GONIOMETRIA_CODO_0}
+\end{figure}
 
 
+Para el correcto análisis es necesario determinar que la posición del paciente, es acostado con el brazo apoyado sobre el decúbito dorsal en posición 0, que el cuerpo quede como si fuera el eje X, y su codo la intersección en 0 del eje Y, se procede a efectuar la flexión y la extensión del codo, donde la extensión pasiva en personas con síndrome de hiperlaxitud\footnote{Patología que genera un alteración en las fibras de colágeno en el tejido conectivo en articulaciones \parencite[1]{PedroRevistaClinic}} puede ser 0° a 10°(AO) y  Flexión puede ir de 0° - 150°. como se puede observar en la figura 3.
+
+%Asociación para el Estudio de la Osteosíntesis (AO) y la Academia Americana de Cirujanos Ortopédicos (AAOS).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{Anexos/LATEX/chapters/images/goniometria_codo.png}
+    \caption{Flexión-extensión del codo derecho a partir de la posición 0}
+    \small{\textbf{Fuente:} \parencite{Taboadela2007TaboadelaLaborales.} }
+    \label{GONIOMETRIA_CODO}
+\end{figure}
+
+\subsubsection{Goniometría del codo Muñeca}
+La posición correcta para el análisis en ángulos de la muñeca, es con el paciente sentado con su antebrazo apoyado sobre una mesa, imitando el eje X, y con su punto de intersección sobre el hueso piramidal como eje Y, en está rticulaciín la flexión puede ir en 0 a 50°- 60°(AO) y de 0 a 80° y la extensión de 0 a 35°- 60° (AO) y de 0 a 70° (AAOS).\parencite{Taboadela2007TaboadelaLaborales.}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{Anexos/LATEX/chapters/images/goniometria_muneca.png}
+    \caption{Flexión-extensión de la muñeca a partir de la posición 0}
+    \small{\textbf{Fuente:} \parencite{Taboadela2007TaboadelaLaborales.} }
+    \label{GONIOMETRIA_MUNECA}
+\end{figure}
+%Asociación para el Estudio de la Osteosíntesis (AO) y la Academia Americana de Cirujanos Ortopédicos (AAOS).
 
 
+\subsubsection{Goniometría del codo Mano}
+La posición del paciente debe ser sentado, con el antebrazo totalmente apoyado sobre, rotando 90° el eje X, quedando el punto 0 atravesando imaginariamente el dedo corazón hasta el radio alineado con la linea media del antebrazo, para este movimiento se realiza una desviación radial y una cubital como se puede ilustrar en la figura \ref{GONIOMETRIA_MANO}, donde cada una tiene su correspondiente ángulo, la desviación radial va de 0° a 25°-35° (AO)  y 0° a 20° (AAOS), para la desviación cubital los ángulos van de 0° a 30°-40° (AO) y de 0° a 30° (AAOS).\parencite{Taboadela2007TaboadelaLaborales.}
 
-%\subsection{Goniometria}
-%Lo goniometría es la ciencia que se ocupa de la medida angular. A pesar de que la goniometría se ha utilizado en varias disciplinas o, Para este proyecto es indispensable dar su uso en las ciencias de la salud en la que se usa para realizar la medición de movilidad articular en ángulos, ya sea enfocado a la evaluación preventiva, correctiva o exploratoria.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{Anexos/LATEX/chapters/images/goniometria_mano.png}
+    \caption{Flexión-extensión de la mano a partir de la posición 0}
+    \small{\textbf{Fuente:} \parencite{Taboadela2007TaboadelaLaborales.} }
+    \label{GONIOMETRIA_MANO}
+\end{figure}
 
-
-%\subsection{Análisis vectorial de la mano, antebrazo y muñeca}
-%Esto es un modelo matemático de las entradas del leap motion no?
 
 \subsection{Enfermedades y lesiones}
 El \parencite{MinisteriodeProteccionSocialdeColombia2006GuiaSuperiores} define un Desorden Músculo Esquelético (DME) como una lesión física originada por trauma acumulado que se desarrolla gradualmente sobre un período de tiempo; como resultado de repetidos esfuerzos\footnote{Se entiende por “esfuerzos repetidos” a un grupo de movimientos continuos mantenidos durante un trabajo que implica la acción conjunta de (..) una parte del cuerpo y provoca en esta misma zona fatiga muscular, sobrecarga, dolor y, por último, lesión.\parencite{INSHT2016PrevencionRepetidos}} sobre una parte específica del sistema músculo esquelético\footnote{Está constituido por los huesos del cuerpo, los músculos, los tendones, los ligamentos, las articulaciones, los cartílagos y otras clases de tejido conjuntivo.}. 
@@ -124,3 +162,50 @@ El método ERGO/IBV permite analizar tareas repetitivas de miembro superior con 
 
 Para realizar una evaluación se requiere observar las posturas adoptadas por el trabajador, asignándoles un porcentaje que represente la cantidad de tiempo que ocupa esa actividad sobre el total, luego, se puntúa cada postura con respecto a el grado de inclinación desde la posición natural y finalmente se multiplica para ponderar el factor de riesgo.\parencite{Nogareda2009TareasErgonomicos}.
 \section{MARCO TECNOLÓGICO}
+\subsection{Inteligencia Artificial}
+\subsubsection{Aprendizaje de máquina}
+Conocido también como Machine Learning (ML) es definido de manera general por \parencite{MehryarMohriAfshinRostamizadeh2012FoundationsLearning} como "Métodos computacionales usando experiencia para mejorar el desempeño o hacer predicciones precisas". Para \parencite{Flach2012MachineLearning} "es el estudio sistemático de algoritmos y sistemas
+que mejoran su conocimiento o desempeño con experiencia". Para ambos casos la "experiencia" se refiere a la información disponible para el aprendiz, la cual generalmente se encuentra en la forma de información electrónica recopilada y puesta a disposición para análisis.
+
+Los algoritmos de aprendizaje de máquina han sido implementados satisfactoriamente en múltiples áreas como la clásificación de texto, procesamiento de lenguaje natural, reconocimiento de voz, reconocimiento óptico de caracteres (OCR), visión artificial, detección de fraude, videojuegos, control asistido de vehículos, diagnósticos médicos, sistemas de recomendación y otras más.\parencite{MehryarMohriAfshinRostamizadeh2012FoundationsLearning}.
+
+Tales aplicaciones responden a una serie de problemas de aprendizaje, según \parencite{MehryarMohriAfshinRostamizadeh2012FoundationsLearning} algunas de las categorías principales son:
+\begin{itemize}
+    \item Clasificación: Asignar una categoría a cada objeto
+    \item Regresión: Predecir un valor real para cada objeto
+    \item Ranking: Ordenar objetos de acuerdo a cierto criterio
+    \item Agrupamiento (Clustering): Particionar objetos en regiones homogéneas
+    \item Reducción de la dimensionalidad no lineal (Manifold learning): Transformar una representación inicial de objetos, hacia una representación con menores dimensiones preservando las propiedades iniciales
+\end{itemize}
+
+Es importante resaltar que la exactitud del clasificador empleado se encuentra estrictamente relacionado con el proceso de entrenamiento y el clasificador utilizado, adicionalmente, la elección de los parámetros es fundamental para que el aprendizaje sea exitoso. \parencite[7]{Flach2012MachineLearning}
+
+Dicho lo anterior, es imperativo revisar cómo opera cada uno de estos clasificadores.
+\paragraph{Árboles de Decisión (AD)}    
+\paragraph{Redes Neuronales Artificiales (ANN)}
+\paragraph{Máquinas de Soporte Vectorial (SVM)}
+\subsection{Sensores Ópticos}
+\subsubsection{Leap Motion}
+Leap Motion es un sensor óptico que realiza el seguimiento de gestos y posiciones para la manos sin necesidad de hacer contacto con el dispositivo. Consta de de tres pulgadas de largo y una de ancho. Equipado con tres emisores infrarrojos y dos cámaras infrarrojas es capaz de reportar movimientos con precisión submilimétrica. \parencite{Weichert2013AnalysisController.}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{Anexos/LATEX/chapters/images/leapmotion.jpg}
+    \caption{Dispositivo Leap Motion y su renderizado}
+    \small{\textbf{Fuente:} Leap Motion | Leapmotion.com}
+    \label{LeapOverview}
+\end{figure}
+
+El rango de captura de movimientos va desde el antebrazo hasta la punta de los dedos, esto permite reconocer posturas muy precisas de los miembros distales superiores en coordenadas relativas al sensor en un plano (X,Y,Z), haciendo uso de su sistema estereoscópico\footnote{Técnica para crear o mejorar la ilusión de profundidad en una imagen mediante estereopsis para visión binocular.} a cabalidad.
+
+Su uso está preparado para funcionar y fusionarse facilmente con el framework Unity, esta herramienta se puede implementar en otros proyectos desligados de este framework\parencite{LeapMotionInc.2018LeapDeveloper}
+\subsection{Motor de Desarrollo}
+\subsubsection{Unity}
+Unity es un motor de juegos multiplataforma desarrollado por Unity Technologies que funciona mediante un editor visual y scripting\footnote{Codificar una serie de instrucciones que son ejecutadas por un programa de computador} en C\#, puede ser usado para crear tanto juegos bidimensionales y tridimensionales como simulaciones para sus múltiples plataformas. Contando con una licencia gratuita y tres opciones de licencia paga, esta plataforma se ha convertido en el software de motor de juegos \#1 en el 2018, destacado por su facilidad de uso y satisfacción del cliente.\parencite{G2Crowd2018Best2018}
+
+Desde sus orígenes Unity se ha caracterizado por ofrecer las herramientas necesarias para realizar desarrollos de X Reality (XR)\footnote{Abarca un amplio espectro de hardware y software, incluidas las interfaces sensoriales, las aplicaciones y las infraestructuras, que permiten la creación de contenido para realidad virtual (VR), realidad mixta (MR), realidad aumentada (AR), realidad cinematográfica (CR)}, ofreciendo una gran compatibilidad con múltiples dispositivos de hardware de esta misma categoría. Algunas de las ventajas de utilizar Unity sobre otro motor, son:
+\begin{itemize}
+    \item \textbf{Desarrollo multiplataforma}: Unity cuenta con soporte extendido a 25 plataformas.\parencite{UnityTechnologies2018UnityPlatforms} La aplicación desarrollada y desplegada se puede compartir fácilmente entre PC, web y plataformas móviles. 
+    \item \textbf{Metodología ágil}: Permite la creación rápida de prototipos y los lanzamientos constantes, que a su vez aceleran el desarrollo del juego.
+    \item \textbf{Documentación}: La documentación de la plataforma es fácil y muy detallada, incluye la explicación de cada tema sin importar lo pequeño que sea.
+\end{itemize}
