@@ -208,7 +208,7 @@ for biblioteca UIS]
 		\vfill
 		{\normalsize \bf \@legend }
 		\vfill
-		{\normalsize \bf Director \\ \@director \\ \@directortitle}
+		{\normalsize \bf DIRECTOR \\ \@director \\ \@directortitle}
 		\vfill
 		{\normalsize \bf \@institution }
 		{\normalsize \bf \@faculty}
@@ -223,7 +223,7 @@ for biblioteca UIS]
 		\vfill
 		{\normalsize \bf \@legend }
 		\vfill
-		{\normalsize \bf Director \\ \@director \\ \@directortitle}
+		{\normalsize \bf DIRECTOR \\ \@director \\ \@directortitle}
 		\vfill
 		{\normalsize \bf \@institution }
 		{\normalsize \bf \@faculty }

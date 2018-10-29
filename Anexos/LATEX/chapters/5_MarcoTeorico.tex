@@ -16,7 +16,7 @@ El limite de captura del Leap Motion es hasta la muñeca, a partir de una proyec
 \end{figure}
 
 
-Para el correcto análisis es necesario determinar que la posición del paciente, es acostado con el brazo apoyado sobre el decúbito dorsal en posición 0, que el cuerpo quede como si fuera el eje X, y su codo la intersección en 0 del eje Y, se procede a efectuar la flexión y la extensión del codo, donde la extensión pasiva en personas con síndrome de hiperlaxitud\footnote{Patología que genera un alteración en las fibras de colágeno en el tejido conectivo en articulaciones \parencite[1]{PedroRevistaClinic}} puede ser 0° a 10°(AO) y  Flexión puede ir de 0° - 150°. como se puede observar en la figura 3.
+Para el correcto análisis es necesario determinar que la posición del paciente, es acostado con el brazo apoyado sobre el decúbito dorsal en posición 0, que el cuerpo quede como si fuera el eje X, y su codo la intersección en 0 del eje Y, se procede a efectuar la flexión y la extensión del codo, donde la extensión pasiva en personas con síndrome de hiperlaxitud\footnote{Patología que genera un alteración en las fibras de colágeno en el tejido conectivo en articulaciones. \parencite[1]{PedroRevistaClinic}} puede ser 0° a 10°(AO) y  Flexión puede ir de 0° - 150°. como se puede observar en la figura 3.
 
 %Asociación para el Estudio de la Osteosíntesis (AO) y la Academia Americana de Cirujanos Ortopédicos (AAOS).
 
@@ -109,7 +109,7 @@ El \parencite[1]{INSHT2017SindromeCodo} describe esta enfermedad como una monone
 \paragraph{Repercusión}
 Una lesión del nervio cubital (CIE.9.MC: 352.2) posee un tiempo estándar de incapacidad transitoria de 60 días\parencite[6]{INSHT2017SindromeCodo}.
 \paragraph{Prevención}
-Evitar trabajos en los que se produzca un apoyo prolongado y repetido de forma directa o indirecta sobre las correderas anatómicas que provocan lesiones nerviosas por compresión, no realizar movimientos extremos de hiperflexión\footnote{Flexión forzada de una extremidad a un grado mayor de lo normal} y de hiperextensión\footnote{Posición en que se encuentra una articulación al sobrepasar su posición anatómica neutral} del codo.\parencite[5]{INSHT2017SindromeCodo}.
+Evitar trabajos en los que se produzca un apoyo prolongado y repetido de forma directa o indirecta sobre las correderas anatómicas que provocan lesiones nerviosas por compresión, no realizar movimientos extremos de hiperflexión\footnote{Flexión forzada de una extremidad a un grado mayor de lo normal.} y de hiperextensión\footnote{Posición en que se encuentra una articulación al sobrepasar su posición anatómica neutral.} del codo.\parencite[5]{INSHT2017SindromeCodo}.
 
 
 \section{MARCO REFERENCIAL}
@@ -144,7 +144,7 @@ El método RULA \textit{(Rapid Upper Limb Assessment)} tiene como objetivo de ev
 
 El método RULA evalúa una determinada postura y esta obtiene una puntuación con base a los ángulos generados, estableciendo así un denomiando \textit{Nivel de Actuación}. El Nivel de Actuación indicará si la postura es aceptable o en qué medida son necesarios cambios o rediseños en el puesto. En resumen, RULA permite al evaluador detectar posibles problemas ergonómicos derivados de una excesiva carga postural.\parencite{Diego-Mas2015EvaluacionRULA}\parencite[4]{Mcatamney1993RULA:Disorders}
 
-\parencite{Diego-Mas2015EvaluacionRULA} indica que RULA divide el cuerpo en dos grupos, el Grupo A que incluye los miembros superiores (brazos, antebrazos y muñecas) y el Grupo B, que comprende las piernas, el tronco y el cuello. Mediante las tablas asociadas al método, se asigna una puntuación a cada zona corporal (piernas, muñecas, brazos, tronco...) para, en función de dichas puntuaciones, asignar valores globales a cada uno de los grupos A y B.
+\parencite{Diego-Mas2015EvaluacionRULA} indica que RULA divide el cuerpo en dos grupos, el Grupo A que incluye los miembros superiores (brazos, antebrazos y muñecas) y el Grupo B, que comprende las piernas, el tronco y el cuello. Mediante las tablas asociadas al método, se asigna una puntuación a cada zona corporal (piernas, muñecas, brazos, tronco, etc.) para, en función de dichas puntuaciones, asignar valores globales a cada uno de los grupos A y B.
 \subsection{Método Reba}
 REBA \textit{(Rapid Entire Body Assessment)} es un método basado en el previamente mencionado método RULA, diferenciándose fundamentalmente en la inclusión en la evaluación de las extremidades inferiores. Según \parencite{Diego-Mas2015EvaluacionREBA} REBA es uno de los métodos observacionales para la evaluación de posturas más extendido en la práctica.
 
@@ -181,8 +181,34 @@ Tales aplicaciones responden a una serie de problemas de aprendizaje, según \pa
 Es importante resaltar que la exactitud del clasificador empleado se encuentra estrictamente relacionado con el proceso de entrenamiento y el clasificador utilizado, adicionalmente, la elección de los parámetros es fundamental para que el aprendizaje sea exitoso. \parencite[7]{Flach2012MachineLearning}
 
 Dicho lo anterior, es imperativo revisar cómo opera cada uno de estos clasificadores.
-\paragraph{Árboles de Decisión (AD)}    
+\paragraph{Árboles de Decisión (AD)}
+Un árbol de decisión representa una función que toma como entrada un vector de valores de atributo y devuelve una "decisión": un único valor de salida. La inducción de árboles de decisión es una de las formas más simples y exitosas de aprendizaje de máquina.\parencite[697]{Russel2010Artificial_Intelligence_3rd}.
+
+Los arboles de decisión realizan una serie de valoraciones sobre los atributos de entrada $A_i$ al pasar por cada nodo, y las ramas poseen etiquetas con los posibles valores del atributo, $A_i = V_{ik}$
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{Anexos/LATEX/chapters/images/add.PNG}
+    \caption{Árbol de decisión para decidir si esperar una mesa}
+    \small{\textbf{Fuente:} \parencite[699]{Russel2010Artificial_Intelligence_3rd}}
+    \label{add}
+\end{figure}
+
+Una de las maneras para poder obtener una división óptima de los datos es realizar un cálculo de entropía\footnote{Para \parencite[703]{Russel2010Artificial_Intelligence_3rd} la entropía \textit{“Es una medida de incertidumbre para una variable
+aleatoria; la adquisición de información corresponde a la reducción en la entropía.”}} sobre el vector de entrada. El objetivo es buscar la variable que aporte la mayor cantidad de información (entropía menor), aquellas con esta cualidad tienen más probabilidad de ser elegidas como nodos principales.
+
 \paragraph{Redes Neuronales Artificiales (ANN)}
+Uno de los pilares de la neurociencia es que la actividad mental consiste principalmente de electroquímica entre redes de celulas cerebrales llamadas neuronas. Inspirados por esta hipótesis, algunos de los primeros desarrollos de IA fueron orientados a crear redes neuronales artificiales. \parencite[727]{Russel2010Artificial_Intelligence_3rd}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{Anexos/LATEX/chapters/images/ann.jpg}
+    \caption{Esqueleto de una red neuronal artificial}
+    \small{\textbf{Fuente:} IBM Knowledge Center}
+    \label{ann}
+\end{figure}
+
+A grandes rasgos, los componentes de una neurona son: Entradas, función de entrada, función de activación, salida y enlaces de salida. Las propiedades de la red son determinadas por su topología y algunas características de sus neuronas, sin embargo, el funcionamiento es el mismo, una neurona se "dispara" cuando una combinación lineal de entradas supera cierto limite.
 \paragraph{Máquinas de Soporte Vectorial (SVM)}
 \subsection{Sensores Ópticos}
 \subsubsection{Leap Motion}
@@ -201,11 +227,56 @@ El rango de captura de movimientos va desde el antebrazo hasta la punta de los d
 Su uso está preparado para funcionar y fusionarse facilmente con el framework Unity, esta herramienta se puede implementar en otros proyectos desligados de este framework\parencite{LeapMotionInc.2018LeapDeveloper}
 \subsection{Motor de Desarrollo}
 \subsubsection{Unity}
-Unity es un motor de juegos multiplataforma desarrollado por Unity Technologies que funciona mediante un editor visual y scripting\footnote{Codificar una serie de instrucciones que son ejecutadas por un programa de computador} en C\#, puede ser usado para crear tanto juegos bidimensionales y tridimensionales como simulaciones para sus múltiples plataformas. Contando con una licencia gratuita y tres opciones de licencia paga, esta plataforma se ha convertido en el software de motor de juegos \#1 en el 2018, destacado por su facilidad de uso y satisfacción del cliente.\parencite{G2Crowd2018Best2018}
+Unity es un motor de juegos multiplataforma desarrollado por Unity Technologies que funciona mediante un editor visual y scripting\footnote{Codificar una serie de instrucciones que son ejecutadas por un programa de computador.} en C\#, puede ser usado para crear tanto juegos bidimensionales y tridimensionales como simulaciones para sus múltiples plataformas. Contando con una licencia gratuita y tres opciones de licencia paga, esta plataforma se ha convertido en el software de motor de juegos \#1 en el 2018, destacado por su facilidad de uso y satisfacción del cliente.\parencite{G2Crowd2018Best2018}
 
-Desde sus orígenes Unity se ha caracterizado por ofrecer las herramientas necesarias para realizar desarrollos de X Reality (XR)\footnote{Abarca un amplio espectro de hardware y software, incluidas las interfaces sensoriales, las aplicaciones y las infraestructuras, que permiten la creación de contenido para realidad virtual (VR), realidad mixta (MR), realidad aumentada (AR), realidad cinematográfica (CR)}, ofreciendo una gran compatibilidad con múltiples dispositivos de hardware de esta misma categoría. Algunas de las ventajas de utilizar Unity sobre otro motor, son:
+Desde sus orígenes Unity se ha caracterizado por ofrecer las herramientas necesarias para realizar desarrollos de X Reality (XR)\footnote{Abarca un amplio espectro de hardware y software, incluidas las interfaces sensoriales, las aplicaciones y las infraestructuras, que permiten la creación de contenido para realidad virtual (VR), realidad mixta (MR), realidad aumentada (AR), realidad cinematográfica (CR).}, ofreciendo una gran compatibilidad con múltiples dispositivos de hardware de esta misma categoría. Algunas de las ventajas de utilizar Unity sobre otro motor, son:
 \begin{itemize}
     \item \textbf{Desarrollo multiplataforma}: Unity cuenta con soporte extendido a 25 plataformas.\parencite{UnityTechnologies2018UnityPlatforms} La aplicación desarrollada y desplegada se puede compartir fácilmente entre PC, web y plataformas móviles. 
     \item \textbf{Metodología ágil}: Permite la creación rápida de prototipos y los lanzamientos constantes, que a su vez aceleran el desarrollo del juego.
     \item \textbf{Documentación}: La documentación de la plataforma es fácil y muy detallada, incluye la explicación de cada tema sin importar lo pequeño que sea.
+    
 \end{itemize}
+    
+\subsection{Metodología ingeniería de software}
+\subsubsection{SCRUM}
+
+En el año 1996 por Ken Schwaber y Jeff Sutherland nace esta metodología basada en la formación más reconocible de rugby, en la que ambos equipos se empujan entre si para obtener el balón y sacarlo de la formación sin tocarlo con la mano, la cual posee este mismo nombre, SCRUM \parencite{AlexanderMenzinskyGertrudisLopez2016ScrumManage}, busca aprovechar las características de un equipo y enfocarlas a evitar retrasos  e ir ajustando en diferentes partes del proceso de forma iterativa, este permite una rápida toma de decisiones frente a las eventualidades en el desarrollo.
+
+
+Esta metodología se puede utilizar en todo tipo de desarrollo de software, desde desarrollar paquetes de software completos o solo algunas partes de sistemas más grandes, teniendo en cuenta que es importante que en estos proyectos quienes los ejecutan tengan en cuenta los pilares de auto-organización y la comunicación dentro del equipo,en general solo se definen con algunas reglas, roles, artefactos y eventos, pero cada uno de estos elementos tiene un propósito especifico y esencial.
+
+los componentes principales de SCRUM están definidos por 
+\begin{itemize}
+    \item Tres roles: Scrum Master, el propietario del producto (Product Owner) y el equipo desarrollo
+    \item Un Backlog priorizado que contiene los requisito del usuario final.
+    \item Sprints o iteraciones
+    \item Eventos Scrum: En estos se encuentran, la reunión de planificación de Sprint(QUÉ-reunión, HOW-Meeting), reunión diaria de Scrum, reunión de revisión de Sprint, Sprint retrospective meeting 
+\end{itemize}
+
+para entender el proceso de Scrum es necesario abordar cada uno de estos elementos ,a continuación se realiza una descripción general, de lo establecido por la metodología. 
+
+\paragraph{Roles}
+Los roles en Scrum se dividen en personas comprometidas con el proyecto y personas que se benefician del proyecto, para las personas comprometidas con el proyecto se encuentran
+\begin{itemize}
+    \item Product Owner, Este es como se traduce el propietario del producto, persona que toma las decisiones y conoce el negocio del cliente junto la visión que este tiene acerca del producto final, se encarga de reunirse con el cliente, tomar las ideas y ordenarlas por prioridad en el Product Backlog
+     \item Scrum Master, Comprueba que el modelo y metodología funcionan , está encargado de eliminar los inconvenientes que hagan interrumpir el proceso, también interactúa con el cliente.
+     \item Equipo desarrollo, El tamaño del equipo depende de el tipo de solución a desarrollar, tienen autoridad para organizarse y tomar decisiones con el foco puesto en el objetivo, está 100\% involucrado con la estimación del esfuerzo en as tareas de Product Backlog.
+\end{itemize}
+
+Por otra parte, se encuentran las personas que se benefician con el proyecto, que aunque no son parte del proceso de SCRUM, es necesaria su información para la retroalimentación de la salida y así poder verificar,revisar y planear cada uno de los Sprints.
+\begin{itemize}
+    \item Usuarios, Es el destinatario del producto final. 
+    \item Stakeholders, personas que se benefician de cada revisión de Sprint
+    \item Managers, Toma las decisiones participando en la selección o filtro de objetivos y requisitos. 
+\end{itemize}
+
+\paragraph{Artefactos}
+
+\begin{itemize}
+    \item Pila del producto (Product backlog), Está conformada por la lista de requerimientos del usuario, que a partir de la visión del producto va creciendo y evolucionando durante el proceso de desarrollo.
+    \item Pila del sprint(Sprint backlog), Esta es la lista de trabajos y tareas que debe realizar el equipo de desarrollo para generar el incremento meta. 
+    \item Incremento, es el resultado de cada iteración (Sprint)
+\end{itemize}
+
+
+\paragraph{Eventos}
