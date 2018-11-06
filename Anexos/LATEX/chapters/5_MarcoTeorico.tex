@@ -5,7 +5,7 @@
 La goniometría es la ciencia y técnica que estudia la medición de ángulos, para efectos de este estudio, se medirá la movilidad de las articulaciones mediante un vector que se intercepta en el espacio con otro vector, posteriormente dependiendo del ángulo de esta intersección longitudinal se pude marcar un eje de referencia para así obtener un criterio con respecto a las limitaciones físicas del cuerpo humano.  \parencite{Taboadela2007TaboadelaLaborales.}
 
 \subsubsection{Goniometría del codo}
-El limite de captura del Leap Motion es hasta la muñeca, a partir de una proyección del ángulo de la muñeca se puede determinar la posición del codo debido a la estructura osea y la membrana interosea, este movimiento se denomina pronación y supinación que se da en la muñeca y se producen hasta el codo. \parencite{Taboadela2007TaboadelaLaborales.} 
+A partir de una proyección del ángulo del antebrazo se puede determinar la posición del codo con base a la estructura osea y la membrana interósea. El movimiento de rotación que permite situar la mano con el dorso hacia arriba se denomina pronación y el movimiento contrario, supinación. \parencite{Taboadela2007TaboadelaLaborales.} 
 
 \begin{figure}[H]
     \centering
@@ -16,7 +16,7 @@ El limite de captura del Leap Motion es hasta la muñeca, a partir de una proyec
 \end{figure}
 
 
-Para el correcto análisis es necesario determinar que la posición del paciente, es acostado con el brazo apoyado sobre el decúbito dorsal en posición 0, que el cuerpo quede como si fuera el eje X, y su codo la intersección en 0 del eje Y, se procede a efectuar la flexión y la extensión del codo, donde la extensión pasiva en personas con síndrome de hiperlaxitud\footnote{Patología que genera un alteración en las fibras de colágeno en el tejido conectivo en articulaciones. \parencite[1]{PedroRevistaClinic}} puede ser 0° a 10°(AO) y  Flexión puede ir de 0° - 150°. como se puede observar en la figura 3.
+Para el correcto análisis es necesario determinar que la posición del paciente, es acostado con el brazo apoyado sobre el decúbito dorsal en posición 0, que el cuerpo quede como si fuera el eje X, y su codo la intersección en 0 del eje Y, se procede a efectuar la flexión y la extensión del codo, donde la extensión pasiva en personas con síndrome de hiperlaxitud\footnote{Patología que genera un alteración en las fibras de colágeno en el tejido conectivo en articulaciones. \parencite[1]{PedroRevistaClinic}} puede ser 0° a 10°(AO)\footnote{Asociación para el Estudio de la Osteosíntesis (AO)} y  Flexión puede ir de 0° - 150°. como se puede observar en la figura 3.
 
 %Asociación para el Estudio de la Osteosíntesis (AO) y la Academia Americana de Cirujanos Ortopédicos (AAOS).
 
@@ -29,7 +29,7 @@ Para el correcto análisis es necesario determinar que la posición del paciente
 \end{figure}
 
 \subsubsection{Goniometría del codo Muñeca}
-La posición correcta para el análisis en ángulos de la muñeca, es con el paciente sentado con su antebrazo apoyado sobre una mesa, imitando el eje X, y con su punto de intersección sobre el hueso piramidal como eje Y, en está articulación la flexión puede ir en 0 a 50°- 60°(AO) y de 0 a 80° y la extensión de 0 a 35°- 60° (AO) y de 0 a 70° (AAOS).\parencite{Taboadela2007TaboadelaLaborales.}
+La posición correcta para el análisis en ángulos de la muñeca, es con el paciente sentado con su antebrazo apoyado sobre una mesa, imitando el eje X, y con su punto de intersección sobre el hueso piramidal como eje Y, en está articulación la flexión puede ir en 0 a 50°- 60°(AO) y de 0 a 80° y la extensión de 0 a 35°- 60° (AO) y de 0 a 70° (AAOS)\footnote{Academia Americana de Cirujanos Ortopédicos (AAOS)}.\parencite{Taboadela2007TaboadelaLaborales.}
 
 \begin{figure}[H]
     \centering
@@ -186,27 +186,11 @@ Un árbol de decisión representa una función que toma como entrada un vector d
 
 Los arboles de decisión realizan una serie de valoraciones sobre los atributos de entrada $A_i$ al pasar por cada nodo, y las ramas poseen etiquetas con los posibles valores del atributo, $A_i = V_{ik}$
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=1\textwidth]{Anexos/LATEX/chapters/images/add.PNG}
-    \caption{Árbol de decisión para decidir si esperar una mesa}
-    \small{\textbf{Fuente:} \parencite[699]{Russel2010Artificial_Intelligence_3rd}}
-    \label{add}
-\end{figure}
-
 Una de las maneras para poder obtener una división óptima de los datos es realizar un cálculo de entropía\footnote{Para \parencite[703]{Russel2010Artificial_Intelligence_3rd} la entropía \textit{“Es una medida de incertidumbre para una variable
 aleatoria; la adquisición de información corresponde a la reducción en la entropía.”}} sobre el vector de entrada. El objetivo es buscar la variable que aporte la mayor cantidad de información (entropía menor), aquellas con esta cualidad tienen más probabilidad de ser elegidas como nodos principales.
 
 \paragraph{Redes Neuronales Artificiales (ANN)}
 Uno de los pilares de la neurociencia es que la actividad mental consiste principalmente de electroquímica entre redes de celulas cerebrales llamadas neuronas. Inspirados por esta hipótesis, algunos de los primeros desarrollos de IA fueron orientados a crear redes neuronales artificiales.  \parencite[727]{Russel2010Artificial_Intelligence_3rd}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.7\textwidth]{Anexos/LATEX/chapters/images/ann.jpg}
-    \caption{Esqueleto de una red neuronal artificial}
-    \small{\textbf{Fuente:} IBM Knowledge Center}
-    \label{ann}
-\end{figure}
 
 A grandes rasgos, los componentes de una neurona son: Entradas, función de entrada, función de activación, salida y enlaces de salida. Las propiedades de la red son determinadas por su topología y algunas características de sus neuronas, sin embargo, el funcionamiento es el mismo, una neurona se "dispara" cuando una combinación lineal de entradas supera cierto limite.
 
@@ -217,21 +201,12 @@ Una máquina de soporte vectorial trata de separar los elementos en dos categor�
 
 Una función Kernel consiste en una técnica matemática que mapea los datos hacia una dimensión superior, al realizar este mapeo se obtienen nuevas posibilidades para dividir la información y obtener un hiperplano que puede lograr la tarea que era imposible en la dimensión base. La cantidad de Kernel que se pueden utilizar es numerosa, sin embargo, se aconseja evaluar aquellos que fueron explorados en trabajos similares. \parencite{Boswell2002IntroductionMachines}
 
-Finalmente, el margen suave consiste en maniobrar el margen de error en la clasificación al ampliar o reducir el tamaño del hiperplano. (Stafford,
-2006).
+Finalmente, el margen suave consiste en maniobrar el margen de error en la clasificación al ampliar o reducir el tamaño del hiperplano. (Stafford, 2006).
 
 
 \subsection{Sensores Ópticos}
 \subsubsection{Leap Motion}
 Leap Motion es un sensor óptico que realiza el seguimiento de gestos y posiciones para la manos sin necesidad de hacer contacto con el dispositivo. Consta de de tres pulgadas de largo y una de ancho. Equipado con tres emisores infrarrojos y dos cámaras infrarrojas es capaz de reportar movimientos con precisión submilimétrica.  \parencite{Weichert2013AnalysisController.}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\textwidth]{Anexos/LATEX/chapters/images/leapmotion.jpg}
-    \caption{Dispositivo Leap Motion y su renderizado}
-    \small{\textbf{Fuente:} Leap Motion | Leapmotion.com}
-    \label{LeapOverview}
-\end{figure}
 
 El rango de captura de movimientos va desde el antebrazo hasta la punta de los dedos, esto permite reconocer posturas muy precisas de los miembros distales superiores en coordenadas relativas al sensor en un plano (X,Y,Z), haciendo uso de su sistema estereoscópico\footnote{Técnica para crear o mejorar la ilusión de profundidad en una imagen mediante estereopsis para visión binocular.} a cabalidad.
 
@@ -255,9 +230,9 @@ Esta metodología basada en la formación más reconocible de rugby, en la que a
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\textwidth]{Anexos/LATEX/chapters/images/maxresdefault.jpg}
+    \includegraphics[width=1\textwidth]{Anexos/LATEX/chapters/images/scrum.jpg}
     \caption{Diagrama metodología SCRUM}
-    \small{\textbf{Fuente:} https://i.ytimg.com/vi/P25JP0u6UKw/maxresdefault.jpg}
+    \small{\textbf{Fuente:} Microsoft DevOps Docs}
     \label{SCRUM}
 \end{figure}
 
@@ -300,17 +275,17 @@ los eventos en Scrum son bloques o franjas de tiempo, en los cuales se desarroll
 \begin{itemize}
     
     \item Scrum diario, Son reuniones con frecuencia diarias, con lapsos de tiempo no mayor a 15 minutos, en el caso que se necesario se podrá requerir la presencia del Product Owner, la de los stakeholders y Scrum master, la idea central de la reunión es revisar que se realizó desde la ultima reunión, en que se va a trabajar hasta la próxima reunión y que situaciones e inconvenientes se han presentado, todo esto se resume y se busca por medio del conocimiento Y experiencia del grupo la superación de inconvenientes en el proyecto. 
-    \item Revisión de sprint, Este evento se realiza al finalizar cada Sprint, en la que se realiza una reunión conocida como revisión de sprint ( Sprint Review), en esta reunión se evalúa el incremento funcional construido por el equipo de desarrollo, en esta reunión el equipo Scrum y los stakeholders revisan los resultados del Sprint en producto utilizable, funcional y potencialmente entregable, realizando una verificación y validación, de lo construido, generando una evaluación que permite la aprobación o rechazo de lo desarrollado, Las retroalimentaciones que los stakeholder realicen debe ser ingresada  en el Product Backlog de forma prioritaria.  
+    \item Revisión de sprint, Este evento se realiza al finalizar cada Sprint, en la que se realiza una reunión conocida como revisión de sprint ( Sprint Review), en esta reunión se evalúa el incremento funcional construido por el equipo de desarrollo, en esta reunión el equipo Scrum y los stakeholders revisan los resultados del Sprint en producto utilizable, funcional y potencialmente entregable, realizando una verificación y validación, de lo construido, generando una evaluación que permite la aprobación o rechazo de lo desarrollado.  
     
      \item Retroalimentación (feedback), La retroalimentación es algo constante y un paso en la metodología que no se puede omitir, debido a que está enfocada a la mejora continua y mitigación de eventualidades, en donde el equipo tiene la tarea de evaluar su trabajo realizado y los acontecimientos que sucedieron al momento de alcanzar el Sprint, estos son los aspectos que se revisan en la reunión de Feedback.
      
      \item Lanzamiento (release), Es la fase en la que el proyecto despega a su etapa final, se encuentra dividido en dos partes, la primera es el envió de entregables, en este envió se entregan únicamente los aceptados (Accepted deliverables) y mediante un acuerdo formal conocido como entregables de trabajo (Working deliverables agreement) se documenta la finalización y éxito del Sprint, luego como segunda parte se realiza la retroalimentación del proyecto (Feedback del proyecto), en donde los miembros principales del equipo SCRUM se reúnen para realizar un feedback del proyecto, con el objetivo de documentar e identificar aspectos de experiencia que se puedan aplicar a otros proyectos esto se conoce como Agreed Actionable Improvement. 
      
-     \item Historias de usuario, este artefacto es paralelo durante todo el tiempo del proyecto, son descripciones de las funcionalidades que va a tener el software, es una colaboración entre el cliente y el equipo SCRUM, y va evolucionando con el proyecto, en la redacción de las historias de usuario se tienen que hablar en primera persona, tener un orden de prioridades y que se conozca el propósito de la funcionalidad, para que el equipo pueda cumplirlo, las historias de usuario se componen de 3 elementos esto se conoce como “las tres C´s” de las historias de usuario
+     \item Historias de usuario, este artefacto es paralelo durante todo el tiempo del proyecto, son descripciones de las funcionalidades que va a tener el software, es una colaboración entre el cliente y el equipo SCRUM, y va evolucionando con el proyecto, las historias de usuario se componen de 3 elementos esto se conoce como “las tres C´s” de las historias de usuario
 	    \begin{enumerate}
 	        \item Card (ficha), Es el marco para definir si se están pasando fronteras en la comunicación de información, toda historia de usuario tiene que poder describirse de manera corta en una ficha.
             \item Conversación, Las historias de usuario son sustentadas en forma de conversación con el Product Owner, en donde se debe intercambiar ideas, pensamientos, opiniones y posiciones frente al proyecto.
-            \item Confirmación, las historias de usuario deben estar claras para el equipo de desarrollo, para que este tenga claridad acerca de lo que se debe construir y sea lo que el Product Owner espera.
+            \item Confirmación, las historias de usuario deben estar claras para el equipo de desarrollo.
     	 \end{enumerate}
 
  \end{itemize}
